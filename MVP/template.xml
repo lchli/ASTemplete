@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<template
+    format="5"
+    revision="3"
+    name="MVP"
+    description="创建一个基本的MVP骨架">
+
+    <category value="Babytree" />
+
+    <parameter
+        id="packageName"
+        name="Package name"
+        type="string"
+        constraints="package"
+        default="com.mycompany.myapp" />
+
+    <parameter
+        id="contractClass"
+        name="契约类的名字"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="MyContract"
+        help="为了方便最好以Contract结尾" />
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
